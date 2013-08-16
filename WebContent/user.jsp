@@ -30,7 +30,7 @@
 			<li>Session创建时间: <%=new Date(session.getCreationTime())%></li>
 			<li>Session上次访问时间: <%=new Date(session.getLastAccessedTime())%></li>
 			<li>Session访问次数：<%=session.getAttribute("CNT")%>
-			<li>Session有效时长(秒):
+			<li>Session有效时间倒计时(秒):
 				<em><strong id="CT"><%=session.getMaxInactiveInterval()%></strong></em>
 			</li>
 			<li>Session是新的么?<%=session.isNew()%></li>

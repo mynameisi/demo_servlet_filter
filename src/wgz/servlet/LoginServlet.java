@@ -29,7 +29,7 @@ public class LoginServlet extends HttpServlet {
 		String pass = request.getParameter("pass");
 		logger.debug("user=" + user);
 		logger.debug("pass=" + pass);
-		if (user.equals("1") && pass.equals("1")) {
+		if (user.equals("admin") && pass.equals("admin")) {
 			HttpSession session = request.getSession();
 			session.setAttribute("user", user);
 
